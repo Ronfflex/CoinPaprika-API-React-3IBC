@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Si vous utilisez react-router pour la navigation
-import styles from "./Header.module.css"; // Assurez-vous que le chemin est correct
+import { Link } from "react-router-dom";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
@@ -17,10 +17,10 @@ const Header = () => {
           Liste crypto
         </Link>
         <Link className={styles.link} to="/top-crypto-volume24">
-          Top Crypto Volume
+          Top crypto volume 24h
         </Link>
-        <Link className={styles.link} to="/top-marketCap">
-          Top Crypto Volume
+        <Link className={styles.link} to="/top-crypto-marketCap">
+          Top crypto marketCap
         </Link>
       </div>
     </nav>

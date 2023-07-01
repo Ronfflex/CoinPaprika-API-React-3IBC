@@ -15,7 +15,7 @@ function TopCryptoVolume24() {
 
   return (
     <div>
-      <h2>Top 50 Cryptos by Volume</h2>
+      <h2>Top 50 Cryptos by Volume (24 hours)</h2>
       {cryptos.map((crypto) => (
         <div key={crypto.id}>
           <p>{crypto.name}</p>

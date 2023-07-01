@@ -10,8 +10,8 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import NotFound from "./components/errors/NotFound";
 import CryptoDetail from "./components/crypto/crypto.detail";
-import TopCryptoVolume from "./components/crypto/cyptovolume24.top";
 import TopCryptoVolume24 from "./components/crypto/cyptovolume24.top";
+import TopCryptoMarketCap from "./components/crypto/cryptomarketcap.top";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -26,7 +26,7 @@ root.render(
         <Route path="/list" element={<App />} />
         <Route path="/crypto/:id" element={<CryptoDetail />} />
         <Route path="/top-crypto-volume24" element={<TopCryptoVolume24 />} />
-        <Route path="/top-crypto-volume" element={<TopCryptoVolume />} />
+        <Route path="/top-crypto-marketCap" element={<TopCryptoMarketCap />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
@@ -34,7 +34,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

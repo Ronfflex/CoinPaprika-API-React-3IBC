@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { CryptoService } from "../../services";
 import { CryptoDTO } from "../../dto";
 
-function TopCryptoVolume24() {
+function TopCryptoMarketCap() {
   const [cryptos, setCryptos] = useState<CryptoDTO[]>([]);
 
   useEffect(() => {
     const fetchCryptos = async () => {
-      const apiCryptos = await CryptoService.getTop50CryptosByVolume();
+      const apiCryptos = await CryptoService.getTop50CryptosByMarketCap();
       setCryptos(apiCryptos);
     };
     fetchCryptos().catch(console.error);
@@ -15,15 +15,15 @@ function TopCryptoVolume24() {
 
   return (
     <div>
-      <h2>Top 50 Cryptos by Volume (24 hours)</h2>
+      <h2>Top 50 Cryptos by Market Cap</h2>
       {cryptos.map((crypto) => (
         <div key={crypto.id}>
           <p>{crypto.name}</p>
-          <p>Volume: {crypto.quotes.USD.volume_24h}</p>
+          <p>Market Cap: {crypto.quotes.USD.market_cap} $</p>
         </div>
       ))}
     </div>
   );
 }
 
-export default TopCryptoVolume24;
+export default TopCryptoMarketCap;
