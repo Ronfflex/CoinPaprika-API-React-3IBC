@@ -1,5 +1,8 @@
 # Réalisation d'une application utilisant l'API coinpaprika
 
+Temps imparti : 2h
+Référence(s) : https://api.coinpaprika.com
+
 Les écrans à réaliser sont les suivants :
 
 - Ecran d'accueil✔️
