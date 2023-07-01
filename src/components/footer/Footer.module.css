@@ -1,0 +1,11 @@
+/* Footer.module.css */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #282c34;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+}

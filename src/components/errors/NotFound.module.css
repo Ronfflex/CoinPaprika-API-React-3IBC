@@ -1,0 +1,11 @@
+/* NotFound.module.css */
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* prend la hauteur totale de la fenêtre de visualisation */
+    background-color: #282c34; /* couleur de fond noir */
+    color: #fff; /* couleur du texte blanc */
+    font-size: 2rem; /* taille du texte */
+    text-align: center;
+}

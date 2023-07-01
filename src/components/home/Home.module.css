@@ -1,0 +1,23 @@
+/* Home.module.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 3rem;
+    color: #61dafb;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    max-width: 800px;
+}
