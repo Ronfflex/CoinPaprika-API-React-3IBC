@@ -6,7 +6,7 @@ Les écrans à réaliser sont les suivants :
 - A propos✔️
 - Liste des cryptos avec barre de recherche✔️
 - Détail d'une crypto✔️
-- Comparaison entre de 2 cryptos ou plus
+- Comparaison entre de 2 cryptos ou plus✔️
 - Classement des cryptos✔️(MarketCap)
 - Classement par volumes 24h✔️
-- Proposer un build avec Docker
+- Proposer un build avec Docker✔️

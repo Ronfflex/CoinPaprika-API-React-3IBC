@@ -12,25 +12,33 @@ import NotFound from "./components/errors/NotFound";
 import CryptoDetail from "./components/crypto/crypto.detail";
 import TopCryptoVolume24 from "./components/crypto/cyptovolume24.top";
 import TopCryptoMarketCap from "./components/crypto/cryptomarketcap.top";
+import CryptoCompare from "./components/crypto/crypto.compare";
+import { ComparisonProvider } from "./context";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/list" element={<App />} />
-        <Route path="/crypto/:id" element={<CryptoDetail />} />
-        <Route path="/top-crypto-volume24" element={<TopCryptoVolume24 />} />
-        <Route path="/top-crypto-marketCap" element={<TopCryptoMarketCap />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <ComparisonProvider>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/list" element={<App />} />
+          <Route path="/crypto/:id" element={<CryptoDetail />} />
+          <Route path="/top-crypto-volume24" element={<TopCryptoVolume24 />} />
+          <Route
+            path="/top-crypto-marketCap"
+            element={<TopCryptoMarketCap />}
+          />
+          <Route path="/crypto-compare" element={<CryptoCompare />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </ComparisonProvider>
   </React.StrictMode>
 );
 

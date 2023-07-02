@@ -22,6 +22,9 @@ const Header = () => {
         <Link className={styles.link} to="/top-crypto-marketCap">
           Top crypto marketCap
         </Link>
+        <Link className={styles.link} to="/crypto-compare">
+          Crypto Compare
+        </Link>
       </div>
     </nav>
   );
